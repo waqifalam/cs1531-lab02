@@ -9,7 +9,7 @@ class Player:
     def write(self, output):
         self.change_guess(output)
 
-    def make_guess(self, prompt):
+    def make_guess(self, prompt=''):
         return str(self.guess)
 
 
