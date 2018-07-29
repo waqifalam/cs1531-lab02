@@ -25,6 +25,4 @@ def fib_sequence(num):
 	# to be completed
 	return fib_dict[num]
 
-if __name__ == '__main__':
-	#write code to accept user input, call the function and print the result
-	pass
+#write code to accept user input, call the function and print the result
