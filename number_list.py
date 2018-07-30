@@ -1,26 +1,20 @@
 def find_reverse(numbers):
-    #TODO: find the reverse of the list
-    pass
+    print(numbers.reverse())
 
 def find_max(numbers):
-    #TODO: find the maximum of the list
-    pass
+    print(max(numbers))
 
 def find_min(numbers):
-    #TODO: find the minimum of the list
-    pass
+    print(min(numbers))
 
 def find_sum(numbers):
-    #TODO: find the sum of all the numbers in the list
-    pass
+    print(sum(numbers))
 
 def find_average(numbers):
-    #TODO: find the average of all the numbers in the list
-    pass
+    print(sum(numbers)/len(numbers))
 
 def find_descending(numbers):
-    #TODO: numbers sorted in descending order
-    pass
+	print(sorted(numbers, key=lambda x:-x))
 
 def second_smallest(numbers):
     #TODO: find the second smallest
