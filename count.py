@@ -9,12 +9,25 @@
 
 
 def count_char(text):
-    pass
-    # add your code here
+    char = {}
+    for ch in text:
+        if ch in char:
+            char[ch] += 1
+        else:
+            char[ch] = 1
+    for ch in char:
+        print("{0} {1}".format(ch, char[ch]))
 
 def count_char_insensitive(text):
-    pass
-    # add your code here
+    char = {}
+    for ch in text:
+        ch = ch.lower()
+        if ch in char:
+            char[ch] += 1
+        else:
+            char[ch] = 1
+    for ch in char:
+        print("{0} {1}".format(ch, char[ch]))
 
 # bonus task:
 def count_char_ordered(text):

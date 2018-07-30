@@ -1,27 +1,24 @@
 def find_reverse(numbers):
-    print(numbers.reverse())
+    return(numbers[::-1])
 
 def find_max(numbers):
-    print(max(numbers))
+    return(max(numbers))
 
 def find_min(numbers):
-    print(min(numbers))
+    return(min(numbers))
 
 def find_sum(numbers):
-    print(sum(numbers))
+    return(sum(numbers))
 
 def find_average(numbers):
-    print(sum(numbers)/len(numbers))
+    return(sum(numbers)/len(numbers))
 
 def find_descending(numbers):
-    print(sorted(numbers, key=lambda x:-x))
+    return(sorted(numbers, key=lambda x:-x))
 
 def second_smallest(numbers):
-    smallest = 99999999
-    for num in numbers:
-        if num < smallest:
-            smallest = num
-    second = 9999999
+    smallest = min(numbers)
+    second = max(numbers)
     for num in numbers:
         if num > smallest and num < second:
             second = num
@@ -34,5 +31,4 @@ def second_smallest(numbers):
  and prints the kth smallest number in the list
 '''
 def kth_smallest(numbers, k):
-    #TODO: find the kth smallest number in the list
     pass
