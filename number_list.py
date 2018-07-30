@@ -14,11 +14,18 @@ def find_average(numbers):
     print(sum(numbers)/len(numbers))
 
 def find_descending(numbers):
-	print(sorted(numbers, key=lambda x:-x))
+    print(sorted(numbers, key=lambda x:-x))
 
 def second_smallest(numbers):
-    #TODO: find the second smallest
-    pass
+    smallest = 99999999
+    for num in numbers:
+        if num < smallest:
+            smallest = num
+    second = 9999999
+    for num in numbers:
+        if num > smallest and num < second:
+            second = num
+    return second
 
 
 '''
